@@ -4,7 +4,6 @@ from flask import Flask, request
 app = Flask(__name__)
 
 API_KEY = '6743547187:AAGfhT8wv-Z9Ds2NP_xItJs0Ud89o0qvyYE'
-WEBHOOK_URL = 'https://api.telegram.org/bot{}/setWebhook'.format(API_KEY)
 
 @app.route('/', methods=['POST'])
 def webhook():
